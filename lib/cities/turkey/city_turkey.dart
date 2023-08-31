@@ -77,7 +77,17 @@ class _CityTurkeyState extends State<CityTurkey> {
             ),
             child: Turkey.istanbul,
           ),
+          Padding(
+            padding: const EdgeInsets.all(28.0),
+            child: Image.asset('images/turkey.jpg'),
+          ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Text('Back'),
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
     );
   }

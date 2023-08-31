@@ -2,6 +2,7 @@ import 'package:country_name/cities/usa/chicago.dart';
 import 'package:country_name/cities/usa/new_york.dart';
 import 'package:country_name/cities/usa/boston.dart';
 import 'package:country_name/const/city_list.dart';
+import 'package:country_name/home_page.dart';
 import 'package:flutter/material.dart';
 
 class CityUSA extends StatefulWidget {
@@ -76,7 +77,17 @@ class _CityUSAState extends State<CityUSA> {
             ),
             child: USA.ny,
           ),
+          Padding(
+            padding: const EdgeInsets.all(28.0),
+            child: Image.asset('images/usa.jpg'),
+          ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Text('Back'),
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
     );
   }

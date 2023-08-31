@@ -76,7 +76,17 @@ class _CityItalyState extends State<CityItaly> {
             ),
             child: Italy.venice,
           ),
+          Padding(
+            padding: const EdgeInsets.all(28.0),
+            child: Image.asset('images/italy.jpg'),
+          ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Text('Back'),
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
     );
   }

@@ -16,20 +16,23 @@ class _IstanbulState extends State<Istanbul> {
         title: Turkey.istanbul,
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.asset('images/istanbul.jpg'),
-          ),
-          const SizedBox(height: 10),
-          const Padding(
-            padding: EdgeInsets.all(12.0),
-            child: Text(
+      body: Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: Column(
+          children: [
+            Image.asset('images/istanbul.jpg'),
+            const SizedBox(height: 15),
+            const Text(
               'Стамбул – крупнейший город Турции на берегах пролива Босфор, который разделяет его на европейскую и азиатскую части. В Старом городе сохранились здания различных исторических эпох. В районе Султанахмет расположены возведенный римлянами Ипподром, где в течение многих столетий проводили гонки на колесницах, и Египетский обелиск. Византийский собор Святой Софии славится своим огромным куполом VI века и роскошными христианскими мозаиками. ',
-            ),
-          )
-        ],
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Text('Back'),
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
     );
   }
