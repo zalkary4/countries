@@ -1,4 +1,4 @@
-import 'package:country_name/cities/city_usa.dart';
+import 'package:country_name/cities/usa/city_usa.dart';
 import 'package:country_name/const/country_list.dart';
 import 'package:flutter/material.dart';
 

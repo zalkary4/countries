@@ -1,4 +1,5 @@
 import 'package:country_name/const/city_list.dart';
+import 'package:country_name/go_to_italy.dart';
 import 'package:flutter/material.dart';
 
 class CityItaly extends StatefulWidget {
@@ -21,7 +22,16 @@ class _CityItalyState extends State<CityItaly> {
         children: [
           const SizedBox(height: 20),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (BuildContext context) {
+              //       return const NewYork();
+              //     },
+              //   ),
+              // );
+            },
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(
                   const Color.fromARGB(255, 52, 239, 77)),
