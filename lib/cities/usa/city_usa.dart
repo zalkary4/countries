@@ -1,6 +1,6 @@
-import 'package:country_name/cities/usa/boston.dart';
 import 'package:country_name/cities/usa/chicago.dart';
 import 'package:country_name/cities/usa/new_york.dart';
+import 'package:country_name/cities/usa/boston.dart';
 import 'package:country_name/const/city_list.dart';
 import 'package:flutter/material.dart';
 
