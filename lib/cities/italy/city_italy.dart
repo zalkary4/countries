@@ -19,71 +19,74 @@ class _CityItalyState extends State<CityItaly> {
         title: const Text('Italy'),
         centerTitle: true,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Milan();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+      body: Padding(
+        padding: const EdgeInsets.all(28.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return Milan();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: Italy.milan,
             ),
-            child: Italy.milan,
-          ),
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Rome();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return Rome();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: Italy.rome,
             ),
-            child: Italy.rome,
-          ),
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Venice();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return Venice();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: Italy.venice,
             ),
-            child: Italy.venice,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(28.0),
-            child: Image.asset('images/italy.jpg'),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.all(28.0),
+              child: Image.asset('images/italy.jpg'),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Text('Back'),
+        child: Text('Return'),
         onPressed: () {
           Navigator.pop(context);
         },

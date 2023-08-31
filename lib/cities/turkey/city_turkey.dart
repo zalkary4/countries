@@ -20,71 +20,74 @@ class _CityTurkeyState extends State<CityTurkey> {
         title: const Text('Turkey'),
         centerTitle: true,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const Ankara();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+      body: Padding(
+        padding: const EdgeInsets.all(28.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const Ankara();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: Turkey.ankara,
             ),
-            child: Turkey.ankara,
-          ),
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const Antaly();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const Antaly();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: Turkey.antaly,
             ),
-            child: Turkey.antaly,
-          ),
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const Istanbul();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const Istanbul();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: Turkey.istanbul,
             ),
-            child: Turkey.istanbul,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(28.0),
-            child: Image.asset('images/turkey.jpg'),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.all(28.0),
+              child: Image.asset('images/turkey.jpg'),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: const Text('Back'),
+        child: const Text('Return'),
         onPressed: () {
           Navigator.pop(context);
         },

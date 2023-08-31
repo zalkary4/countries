@@ -2,7 +2,6 @@ import 'package:country_name/cities/usa/chicago.dart';
 import 'package:country_name/cities/usa/new_york.dart';
 import 'package:country_name/cities/usa/boston.dart';
 import 'package:country_name/const/city_list.dart';
-import 'package:country_name/home_page.dart';
 import 'package:flutter/material.dart';
 
 class CityUSA extends StatefulWidget {
@@ -20,71 +19,74 @@ class _CityUSAState extends State<CityUSA> {
         title: const Text('USA'),
         centerTitle: true,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const Boston();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+      body: Padding(
+        padding: const EdgeInsets.all(28.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const Boston();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: USA.boston,
             ),
-            child: USA.boston,
-          ),
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const Chicago();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const Chicago();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: USA.chicago,
             ),
-            child: USA.chicago,
-          ),
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const NewYork();
-                  },
-                ),
-              );
-            },
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 52, 239, 77)),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const NewYork();
+                    },
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 52, 239, 77)),
+              ),
+              child: USA.ny,
             ),
-            child: USA.ny,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(28.0),
-            child: Image.asset('images/usa.jpg'),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.all(28.0),
+              child: Image.asset('images/usa.jpg'),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Text('Back'),
+        child: Text('Return'),
         onPressed: () {
           Navigator.pop(context);
         },
