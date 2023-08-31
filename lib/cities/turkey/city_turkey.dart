@@ -1,4 +1,6 @@
 import 'package:country_name/cities/turkey/ankara.dart';
+import 'package:country_name/cities/turkey/antaly.dart';
+import 'package:country_name/cities/turkey/istanbul.dart';
 import 'package:country_name/const/city_list.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +43,16 @@ class _CityTurkeyState extends State<CityTurkey> {
           ),
           const SizedBox(height: 20),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return const Antaly();
+                  },
+                ),
+              );
+            },
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(
                   const Color.fromARGB(255, 52, 239, 77)),
@@ -50,7 +61,16 @@ class _CityTurkeyState extends State<CityTurkey> {
           ),
           const SizedBox(height: 20),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return const Istanbul();
+                  },
+                ),
+              );
+            },
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(
                   const Color.fromARGB(255, 52, 239, 77)),
