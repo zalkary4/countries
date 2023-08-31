@@ -1,5 +1,7 @@
+import 'package:country_name/cities/italy/milan.dart';
+import 'package:country_name/cities/italy/rome.dart';
+import 'package:country_name/cities/italy/venice.dart';
 import 'package:country_name/const/city_list.dart';
-import 'package:country_name/go_to_italy.dart';
 import 'package:flutter/material.dart';
 
 class CityItaly extends StatefulWidget {
@@ -27,7 +29,7 @@ class _CityItalyState extends State<CityItaly> {
                 context,
                 MaterialPageRoute(
                   builder: (BuildContext context) {
-                    return Italy.milan;
+                    return Milan();
                   },
                 ),
               );
@@ -45,7 +47,7 @@ class _CityItalyState extends State<CityItaly> {
                 context,
                 MaterialPageRoute(
                   builder: (BuildContext context) {
-                    return Italy.rome;
+                    return Rome();
                   },
                 ),
               );
@@ -63,7 +65,7 @@ class _CityItalyState extends State<CityItaly> {
                 context,
                 MaterialPageRoute(
                   builder: (BuildContext context) {
-                    return Italy.venice;
+                    return Venice();
                   },
                 ),
               );
