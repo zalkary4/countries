@@ -20,7 +20,8 @@ class _IstanbulState extends State<Istanbul> {
         padding: const EdgeInsets.all(18.0),
         child: Column(
           children: [
-            Image.asset('images/istanbul.jpg'),
+            Image.network(
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Istanbul_Sofia.png/198px-Istanbul_Sofia.png'),
             const SizedBox(height: 15),
             const Text(
               'Стамбул – крупнейший город Турции на берегах пролива Босфор, который разделяет его на европейскую и азиатскую части. В Старом городе сохранились здания различных исторических эпох. В районе Султанахмет расположены возведенный римлянами Ипподром, где в течение многих столетий проводили гонки на колесницах, и Египетский обелиск. Византийский собор Святой Софии славится своим огромным куполом VI века и роскошными христианскими мозаиками. ',
