@@ -20,7 +20,8 @@ class _AnkaraState extends State<Ankara> {
         padding: const EdgeInsets.all(18.0),
         child: Column(
           children: [
-            Image.asset('images/ankara.jpg'),
+            Image.network(
+                'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSnoomiCjT1bMTbJU-94LO7l9JiFUyFABHlWqrP82riNtwM6obmm84HSq3cNeFY1dX0N8sbJHpj9YipJ_nfQxYNJc_6UFpb'),
             const SizedBox(height: 15),
             const Text(
                 'Анкара – многонациональная столица Турции, расположенная в регионе Центральная Анатолия. Город славится своим Оперным театром, в котором выступают оперная и балетная труппы, Президентским симфоническим оркестром и несколькими национальными театрами. Над городом возвышается грандиозный мавзолей Аныткабир с могилой Кемаля Ататюрка – первого президента современной Турции, который в 1923 году перенес столицу в Анкару.')

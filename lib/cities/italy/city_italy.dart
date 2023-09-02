@@ -80,7 +80,8 @@ class _CityItalyState extends State<CityItaly> {
             ),
             Padding(
               padding: const EdgeInsets.all(28.0),
-              child: Image.asset('images/italy.jpg'),
+              child: Image.network(
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqj1n4Dp0E0gldqz0N1J-dhcRoShceyaQr5w&usqp=CAU'),
             ),
           ],
         ),
